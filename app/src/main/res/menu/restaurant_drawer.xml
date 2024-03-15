@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:id="@+id/back_group">
+        <item
+            android:id="@+id/nav_restaurant"
+            android:icon="@drawable/ic_baseline_arrow_back_24"
+            android:title="@string/menu_back"/>
+    </group>
+
+    <group android:id="@+id/home_group">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_baseline_home_24"
+            android:title="@string/menu_home" />
+    </group>
+
+    <group android:id="@+id/category_group">
+        <item
+            android:id="@+id/nav_category"
+            android:icon="@drawable/ic_baseline_restaurant_menu_24"
+            android:title="@string/menu_category" />
+    </group>
+
+    <group android:id="@+id/cart_group">
+        <item
+            android:id="@+id/nav_cart"
+            android:icon="@drawable/ic_baseline_shopping_cart_24"
+            android:title="@string/menu_cart" />
+    </group>
+
+    <group android:id="@+id/detail_food_group">
+        <item
+            android:id="@+id/nav_detail_food"
+            android:visible="false" />
+    </group>
+
+    <group android:id="@+id/food_list_group">
+        <item
+            android:id="@+id/nav_food_list"
+            android:visible="false" />
+
+    </group>
+
+</menu>

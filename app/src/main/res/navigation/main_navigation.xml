@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_restaurant">
+
+    <fragment
+        android:id="@+id/nav_restaurant"
+        android:name="com.example.inanyplace.Activities.Windows.restaurant.RestaurantFragment"
+        android:label="@string/menu_restaurants"
+        tools:layout="@layout/fragment_restaurant">
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.inanyplace.Activities.Windows.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home">
+        <argument
+            android:name="restaurant"
+            android:defaultValue="empty"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_category"
+        android:name="com.example.inanyplace.Activities.Windows.category.CategoryFragment"
+        android:label="@string/menu_category"
+        tools:layout="@layout/fragment_category" />
+
+    <fragment
+        android:id="@+id/nav_food_list"
+        android:name="com.example.inanyplace.Activities.Windows.foodlist.FoodListFragment"
+        android:label="@string/menu_food_list"
+        tools:layout="@layout/fragment_food_list" />
+
+    <fragment
+        android:id="@+id/nav_detail_food"
+        android:name="com.example.inanyplace.Activities.Windows.detailfood.DetailFoodFragment"
+        android:label="@string/menu_detail_food"
+        tools:layout="@layout/fragment_detail_food" />
+
+    <fragment
+        android:id="@+id/nav_cart"
+        android:name="com.example.inanyplace.Activities.Windows.cart.CartFragment"
+        android:label="@string/menu_cart"
+        tools:layout="@layout/fragment_cart" />
+
+    <fragment
+        android:id="@+id/nav_orders"
+        android:name="com.example.inanyplace.Activities.Windows.orders.OrdersFragment"
+        android:label="@string/menu_orders"
+        tools:layout="@layout/fragment_orders" />
+
+    <fragment
+        android:id="@+id/nav_statistics"
+        android:name="com.example.inanyplace.Activities.Windows.statistics.StatisticsFragment"
+        android:label="@string/menu_statistics"
+        tools:layout="@layout/fragment_statistics" />
+</navigation>

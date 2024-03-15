@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "211495899436",
+    "firebase_url": "https://inanyplacedb-default-rtdb.firebaseio.com",
+    "project_id": "inanyplacedb",
+    "storage_bucket": "inanyplacedb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:211495899436:android:cfd9f84c94a41e35209c89",
+        "android_client_info": {
+          "package_name": "com.example.inanyplace"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "211495899436-mi5dhgj6430bai5a0n3vkho54cigf320.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBIpApZnLVLbhYgq4qsc4XMAfzjuBJ_CGY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "211495899436-mi5dhgj6430bai5a0n3vkho54cigf320.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

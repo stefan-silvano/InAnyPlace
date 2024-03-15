@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:alpha="0.95"
+    android:background="@drawable/splash_background"
+    android:scaleType="fitXY"
+    android:orientation="vertical"
+    tools:context=".Activities.SplashActivity">
+
+    <ImageView
+        android:id="@+id/image_logo_splash"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="175dp"
+        android:src="@drawable/splash_logo" />
+
+    <TextView
+        android:id="@+id/text_title_splash"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/black_ops_one"
+        android:text="InAnyPlace"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="50dp" />
+
+    <TextView
+        android:id="@+id/text_description_splash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/bad_script"
+        android:textAlignment="center"
+        android:text="Time is precious, and we know that"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        tools:ignore="RtlCompat" />
+
+
+</LinearLayout>

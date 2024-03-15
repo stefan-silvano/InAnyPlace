@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_input_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/edit_text_adress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your address" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delivery Method"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/radio_button_ship_this_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Ship to this address"
+            android:textSize="16dp" />
+
+        <RadioButton
+            android:id="@+id/radio_button_ship_current_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ship current location"
+            android:textSize="16dp" />
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Payment Method"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/radio_button_pay_cash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Pay cash"
+            android:textSize="16dp" />
+
+        <RadioButton
+            android:id="@+id/radio_button_pay_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:text="Pay card (not available now)"
+            android:textColor="#545454"
+            android:textSize="16dp" />
+
+    </RadioGroup>
+
+</LinearLayout>

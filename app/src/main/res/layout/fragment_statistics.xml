@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_delivery_time"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/button_frame"
+            android:text="Delivery time"
+            android:textColor="@color/dark_green"
+            android:textSize="12dp" />
+
+        <Button
+            android:id="@+id/button_time_range"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/button_frame"
+            android:text="Time range"
+            android:textColor="@color/dark_green"
+            android:textSize="12dp"/>
+
+        <Button
+            android:id="@+id/button_order_amount"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/button_frame"
+            android:text="Order Amount"
+            android:textColor="@color/dark_green"
+            android:textSize="12dp" />
+
+        <Button
+            android:id="@+id/button_last_month"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/button_frame"
+            android:text="Last week"
+            android:textColor="@color/dark_green"
+            android:textSize="12dp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/logo_statistics"
+        android:scaleType="fitXY"
+        android:layout_width="500dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="500dp"
+        android:src="@drawable/statistics_logo"/>
+
+    <TextView
+        android:id="@+id/text_view_statistics"
+        android:layout_marginTop="-20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/dark_green"
+        android:textStyle="italic"
+        android:textSize="22dp"
+        android:textAlignment="center"
+        android:layout_gravity="center_horizontal"
+        android:text="We offer real-time statistics for the user, but also for potential collaborators.\nWe invite you to see a statistic. \nSelect a statistic!"/>
+
+    <com.github.mikephil.charting.charts.PieChart
+        android:id="@+id/statistics_pie_chart"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_marginBottom="30dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/text_view_avg_delivery_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="-65dp"
+        android:text="Average delivery time:"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="italic"
+        android:visibility="gone" />
+
+    <com.github.mikephil.charting.charts.HorizontalBarChart
+        android:id="@+id/statistics_horizontal_bar_chart"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/text_view_most_orders"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="-20dp"
+        android:text="Most orders: "
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="italic"
+        android:visibility="gone" />
+
+    <com.github.mikephil.charting.charts.PieChart
+        android:id="@+id/statistics_pie_chart_order_amount"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_marginBottom="30dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/text_view_avg_order_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="-65dp"
+        android:text="Average order amount:"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="italic"
+        android:visibility="gone" />
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/statistics_bar_chart"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="30dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/text_view_number_of_orders"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="-20dp"
+        android:text="Last week ordres: "
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="italic"
+        android:visibility="gone" />
+</LinearLayout>
